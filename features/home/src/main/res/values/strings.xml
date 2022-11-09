@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="available_balance">Available balance</string>
+    <string name="recent_transactions">Recent transactions</string>
+    <string name="available_balance_percent_toast">Changes during this month.</string>
+    <string name="no_income_for_this_month">There\'s no income for this month.</string>
+    <string name="no_expense_for_this_month">There\'s no expense for this month.</string>
+    <string name="transactions_placeholder">There\'s no transactions for this month.</string>
+    <string name="empty_placeholder">Create at least one account to see data.</string>
+</resources>

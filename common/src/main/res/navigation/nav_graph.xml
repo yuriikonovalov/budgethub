@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_navigation">
+
+    <!-- Bottom Navigation destinations -->
+    <include app:graph="@navigation/home_navigation" />
+    <include app:graph="@navigation/accounts_navigation" />
+    <include app:graph="@navigation/report_navigation" />
+    <include app:graph="@navigation/settings_navigation" />
+
+    <include app:graph="@navigation/onboarding_navigation" />
+    <include app:graph="@navigation/login_navigation" />
+
+
+    <action
+        android:id="@+id/to_home"
+        app:destination="@id/home_navigation"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/to_onboarding"
+        app:destination="@id/onboarding_navigation"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/to_login"
+        app:destination="@id/login_navigation"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/to_add_account_fragment"
+        app:destination="@id/add_edit_account_fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@id/nav_graph" />
+
+    <fragment
+        android:id="@+id/add_edit_account_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.addeditaccount.AddEditAccountFragment"
+        tools:layout="@layout/fragment_add_edit_account">
+        <argument
+            android:name="accountId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- For the 'add' button from the bottom navigation. -->
+    <action
+        android:id="@+id/to_add_edit_transaction_fragment"
+        app:destination="@id/add_edit_transaction_fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <fragment
+        android:id="@+id/add_edit_transaction_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.addedittransaction.AddEditTransactionFragment"
+        tools:layout="@layout/fragment_add_edit_transaction">
+
+        <argument
+            android:name="transactionId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/to_add_edit_account_fragment"
+            app:destination="@id/add_edit_account_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/to_select_category_fragment"
+            app:destination="@id/select_category_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/select_category_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.addedittransaction.category.SelectCategoryFragment"
+        tools:layout="@layout/fragment_select_category">
+        <argument
+            android:name="type"
+            app:argType="com.yuriikonovalov.common.application.entities.category.CategoryType" />
+        <action
+            android:id="@+id/to_new_category_dialog"
+            app:destination="@id/new_category_dialog" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/new_category_dialog"
+        android:name="com.yuriikonovalov.common.framework.ui.newcategory.NewCategoryDialog"
+        tools:layout="@layout/dialog_new_category">
+        <argument
+            android:name="type"
+            app:argType="com.yuriikonovalov.common.application.entities.category.CategoryType" />
+    </dialog>
+
+
+    <fragment
+        android:id="@+id/add_edit_transfer_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.addedittransaction.AddEditTransferFragment"
+        tools:layout="@layout/fragment_add_edit_transfer">
+        <argument
+            android:name="transferId"
+            app:argType="long" />
+        <action
+            android:id="@+id/to_add_edit_account_fragment"
+            app:destination="@id/add_edit_account_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transaction_details_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.transactiondetails.TransactionDetailsFragment"
+        tools:layout="@layout/fragment_transaction_details">
+        <argument
+            android:name="transactionId"
+            app:argType="long" />
+        <action
+            android:id="@+id/to_add_edit_transaction_fragment"
+            app:destination="@id/add_edit_transaction_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transfer_details_fragment"
+        android:name="com.yuriikonovalov.common.framework.ui.transferdetails.TransferDetailsFragment"
+        tools:layout="@layout/fragment_transfer_details">
+        <argument
+            android:name="transferId"
+            app:argType="long" />
+        <action
+            android:id="@+id/to_add_edit_transfer_fragment"
+            app:destination="@id/add_edit_transfer_fragment" />
+    </fragment>
+</navigation>

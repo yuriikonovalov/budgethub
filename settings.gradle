@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "BudgetHub"
+include ':app'
+include ':common'
+include ':features:onboarding'
+include ':features:home'
+include ':features:accounts'
+include ':features:settings'
+include ':features:report'
+include ':features:login'
+include ':shared-test'

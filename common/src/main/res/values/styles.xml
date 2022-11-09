@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="navigationIconTint">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Main" parent="Widget.App.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar.Main</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Secondary" parent="Widget.App.Toolbar">
+        <item name="titleCentered">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Toolbar.Main" parent="TextAppearance.Material3.TitleLarge">
+        <!--                <item name="fontFamily">?attr/fontFamily</item>-->
+        <!--        <item name="android:textSize">18sp</item>-->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">?android:attr/colorBackground</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Small</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.CardView.Filled" parent="Widget.Material3.CardView.Filled" />
+
+    <style name="Widget.App.CardView.Elevated" parent="Widget.Material3.CardView.Elevated" />
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.Button.TextButton.Black" parent="Widget.App.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextButton.Black</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextButton.Black" parent="Theme.BudgetHub">
+        <!-- Button enabled - text color-->
+        <item name="colorOnContainer">?attr/colorOnPrimaryContainer</item>
+    </style>
+
+    <style name="Widget.App.Button.TextButton" parent="Widget.Material3.Button.TextButton" />
+
+    <style name="Widget.App.Button.IconButton.Tonal" parent="Widget.Material3.Button.IconButton.Filled.Tonal" />
+
+    <style name="Widget.App.Button.IconButton" parent="Widget.Material3.Button.IconButton" />
+
+    <style name="Widget.App.Button.IconButton.Outlined" parent="Widget.Material3.Button.IconButton.Outlined" />
+
+    <style name="Widget.App.Button.ElevatedButton" parent="Widget.Material3.Button.ElevatedButton" />
+
+    <style name="Widget.App.Button.TonalButton" parent="Widget.Material3.Button.TonalButton" />
+
+    <style name="Widget.App.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton" />
+
+    <style name="Widget.App.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton" />
+
+    <style name="Widget.App.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox" />
+
+    <style name="Widget.App.Button.Settings.Security" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">@color/background_button_settings_security</item>
+        <item name="android:textColor">@color/text_button_settings_security</item>
+        <item name="rippleColor">@color/ripple_button_settings_security</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">28dp</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.TabLayout" parent="Widget.Material3.TabLayout" />
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.Chip.ReportFilter" parent="Widget.Material3.Chip.Assist">
+        <item name="chipMinHeight">@dimen/chip_min_height</item>
+        <item name="chipIcon">@drawable/ic_chevron_down</item>
+        <item name="chipIconTint">?attr/colorOnBackground</item>
+        <item name="checkedIcon">@null</item>
+        <item name="chipStrokeWidth">@dimen/chip_stroke_width</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+
+    <style name="Widget.App.Chip.PeriodFilter" parent="Widget.Material3.Chip.Filter">
+        <item name="chipMinHeight">@dimen/chip_min_height</item>
+        <item name="checkedIcon">@null</item>
+        <item name="chipStrokeWidth">@dimen/chip_stroke_width</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+
+    <style name="Widget.App.Chip.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="chipMinHeight">@dimen/chip_min_height</item>
+        <item name="chipStrokeWidth">@dimen/chip_stroke_width</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+    <style name="Widget.App.TextInputLayout.Amount" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.App.TextInputLayout.Amount
+        </item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Small
+        </item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">?attr/colorSurfaceVariant</item>
+        <item name="prefixTextAppearance">@style/TextAppearance.App.InputAmount</item>
+        <item name="suffixTextAppearance">@style/TextAppearance.App.InputAmount</item>
+        <item name="placeholderTextAppearance">@style/TextAppearance.App.InputAmount</item>
+    </style>
+
+    <style name="TextAppearance.App.InputAmount" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/text_size_amount_input</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout.Amount" parent="">
+        <item name="editTextStyle">@style/Widget.App.TextInputEditText.Amount</item>
+    </style>
+
+    <style name="Widget.App.TextInputEditText.Amount" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">@dimen/text_size_amount_input</item>
+    </style>
+
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.TextInputLayout.Dense" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.App.TextInputLayout.OutlinedBox.Dense
+        </item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Small</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">?attr/colorSurfaceVariant</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout.OutlinedBox.Dense" parent="">
+        <item name="editTextStyle">@style/Widget.App.TextInputEditText.OutlinedBox.Dense</item>
+    </style>
+
+    <style name="Widget.App.TextInputEditText.OutlinedBox.Dense" parent="Widget.Material3.TextInputEditText.OutlinedBox.Dense" />
+    <!-- *************************************************************************************** -->
+
+    <style name="Widget.App.TextInputLayout.Password" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.App.TextInputLayout.FilledBox
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout.FilledBox" parent="">
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.FilledBox</item>
+    </style>
+
+    <!-- DatePicker ***********************************************************************   -->
+    <style name="ThemeOverlay.App.MaterialCalendar" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/Widget.App.MaterialCalendar</item>
+        <item name="materialCalendarHeaderTitle">
+            @style/Widget.App.MaterialCalendar.HeaderTitle
+        </item>
+        <item name="materialCalendarHeaderSelection">
+            @style/Widget.App.MaterialCalendar.HeaderSelection
+        </item>
+    </style>
+
+    <style name="Widget.App.MaterialCalendar.HeaderSelection" parent="Widget.Material3.MaterialCalendar.HeaderSelection">
+        <item name="autoSizeMaxTextSize">26sp</item>
+    </style>
+
+    <style name="Widget.App.MaterialCalendar.HeaderTitle" parent="Widget.Material3.MaterialCalendar.HeaderTitle">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Widget.App.MaterialCalendar" parent="Widget.Material3.MaterialCalendar" />
+
+</resources>

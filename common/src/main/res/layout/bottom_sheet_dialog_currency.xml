@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:theme="@style/Theme.BudgetHub">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/search_input"
+        style="@style/Widget.App.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:hint="@string/search_for_currency"
+        android:inputType="text" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/currencies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_weight="1"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_currency_bottom_sheet_adapter" />
+
+</LinearLayout>

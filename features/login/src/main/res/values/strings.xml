@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="use_biometric">Biometric Authentication </string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="biometric_prompt_title">Verify your identity</string>
+    <string name="biometric_prompt_negative_button">Login with password</string>
+    <string name="login_message">Input your password to continue</string>
+    <string name="login">Login</string>
+</resources>

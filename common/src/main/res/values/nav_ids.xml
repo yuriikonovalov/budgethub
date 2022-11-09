@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="home_navigation" type="id" />
+    <item name="accounts_navigation" type="id" />
+    <item name="report_navigation" type="id" />
+    <item name="settings_navigation" type="id" />
+    <item name="onboarding_navigation" type="id" />
+    <item name="login_navigation" type="id" />
+</resources>

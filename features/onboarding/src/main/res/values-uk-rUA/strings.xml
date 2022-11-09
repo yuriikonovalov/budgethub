@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enable">Ввімкнути</string>
+    <string name="content_description_biometric">Біометричний</string>
+    <string name="next">Далі</string>
+    <string name="biometrics_message">Використовуйте біометричні дані для входу замість пароля.</string>
+    <string name="save_password_failure">Щось пішло не так. Спробуйте знову.</string>
+    <string name="skip">Пропустити</string>
+    <string name="get_started">Розпочати</string>
+    <string name="onboarding_third_fragment_second_message">Без обмежень на кількість акаунтів.</string>
+    <string name="onboarding_third_fragment_first_message">Створюйте скільки завгодно акаунтів</string>
+    <string name="onboarding_first_fragment_second_message">Візьміть під контроль свої гроші та заощаджуйте їх, відстежуючи свої витрати та доходи.</string>
+    <string name="onboarding_first_fragment_first_message">Ласкаво просимо до BudgetHub</string>
+    <string name="onboarding_second_fragment_first_message">Відстежуйте свої фінанси за допомогою гнучкої статистики</string>
+    <string name="onboarding_second_fragment_second_message">Фільтруйте дані за періодами часу, категоріями, валютами акаунтів і тегами.</string>
+</resources>

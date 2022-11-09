@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_margin="@dimen/spacing_small"
+    android:contentDescription="@string/cd_icon"
+    android:padding="4dp"
+    app:contentPadding="8dp"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+    app:strokeColor="?attr/colorOnBackground"
+    tools:src="@drawable/ic_close" />
+

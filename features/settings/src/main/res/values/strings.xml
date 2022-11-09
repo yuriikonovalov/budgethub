@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Settings</string>
+    <string name="clear_data_message">Are you sure you want to clear data? It will delete all your records.</string>
+    <string name="clear_data_title">Clear data?</string>
+    <string name="restore_data_failure">Backup file is not compatible with current DB</string>
+    <string name="clear_data_success">Data cleared</string>
+    <string name="save_backup_file_success">File saved</string>
+    <string name="save_backup_file_failure">File saving failed</string>
+    <string name="create_backup_file_failure">Cannot create a backup file</string>
+    <string name="security">Security</string>
+    <string name="password_authentication">Password authentication</string>
+    <string name="data">Data</string>
+    <string name="backup_data">Backup data</string>
+    <string name="restore_data">Restore data</string>
+    <string name="clear_data">Clear data</string>
+    <string name="biometric_authentication">Biometric authentication</string>
+    <string name="share_file">Share</string>
+    <string name="save_file">Save</string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+</resources>

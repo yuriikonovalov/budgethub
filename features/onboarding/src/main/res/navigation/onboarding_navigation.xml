@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/onboarding_navigation"
+    app:startDestination="@id/onboarding_first_fragment">
+
+    <fragment
+        android:id="@+id/onboarding_first_fragment"
+        android:name="com.yuriikonovalov.onboarding.framework.ui.onboarding.OnboardingFirstFragment"
+        tools:layout="@layout/fragment_onboarding_first">
+        <action
+            android:id="@+id/to_onboarding_second_fragment"
+            app:destination="@id/onboarding_second_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/to_onboarding_third_fragment"
+            app:destination="@id/onboarding_third_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding_second_fragment"
+        android:name="com.yuriikonovalov.onboarding.framework.ui.onboarding.OnboardingSecondFragment"
+        tools:layout="@layout/fragment_onboarding_second">
+        <action
+            android:id="@+id/to_onboarding_third_fragment"
+            app:destination="@id/onboarding_third_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding_third_fragment"
+        android:name="com.yuriikonovalov.onboarding.framework.ui.onboarding.OnboardingThirdFragment"
+        tools:layout="@layout/fragment_onboarding_third">
+        <action
+            android:id="@+id/to_password_fragment"
+            app:destination="@id/password_fragment"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/password_fragment"
+        android:name="com.yuriikonovalov.onboarding.framework.ui.security.password.PasswordFragment"
+        tools:layout="@layout/fragment_password">
+        <action
+            android:id="@+id/to_biometric_authentication_fragment"
+            app:destination="@id/biometric_authentication_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/nav_graph" />
+
+        <action
+            android:id="@+id/to_add_edit_account_fragment"
+            app:destination="@id/add_edit_account_fragment"
+            app:popUpTo="@id/nav_graph">
+            <argument
+                android:name="accountId"
+                app:argType="long" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/biometric_authentication_fragment"
+        android:name="com.yuriikonovalov.onboarding.framework.ui.security.biometricauthentication.BiometricAuthenticationFragment"
+        tools:layout="@layout/fragment_biometric_authentication">
+        <action
+            android:id="@+id/to_add_edit_account_fragment"
+            app:destination="@id/add_edit_account_fragment"
+            app:popUpTo="@id/nav_graph">
+            <argument
+                android:name="accountId"
+                app:argType="long" />
+        </action>
+    </fragment>
+</navigation>

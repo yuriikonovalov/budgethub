@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_extra_small">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        tools:background="?attr/colorAccent" />
+
+    <ImageView
+        android:id="@+id/check_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/cd_selected_color"
+        app:srcCompat="@drawable/ic_check" />
+
+    <ImageView
+        android:id="@+id/add_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/cd_add_color"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="?attr/colorOnBackground" />
+
+</FrameLayout>

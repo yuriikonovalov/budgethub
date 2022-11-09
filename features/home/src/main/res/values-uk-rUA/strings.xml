@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="available_balance">Доступний баланс</string>
+    <string name="recent_transactions">Нещодавні транзакції</string>
+    <string name="available_balance_percent_toast">Зміна за поточний місяць</string>
+    <string name="no_income_for_this_month">Немає доходів за цей місяць.</string>
+    <string name="no_expense_for_this_month">Немає витрат за цей місяць.</string>
+    <string name="transactions_placeholder">У цьому місяці немає транзакцій.</string>
+    <string name="empty_placeholder">Створіть принаймні один акаунт, щоб побачити інформацію.</string>
+</resources>

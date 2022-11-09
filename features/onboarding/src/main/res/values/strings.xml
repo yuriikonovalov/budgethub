@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="onboarding_second_fragment_second_message">Filter your data by time periods, categories, accounts currencies and tags.</string>
+    <string name="onboarding_second_fragment_first_message">Track your finance with flexible stats</string>
+    <string name="onboarding_first_fragment_first_message">Welcome to BudgetHub</string>
+    <string name="onboarding_first_fragment_second_message">Take control of your money and save them by tracking you expenses and incomes.</string>
+    <string name="onboarding_third_fragment_first_message">Create as many accounts as you want</string>
+    <string name="onboarding_third_fragment_second_message">No limits for the number of accounts.</string>
+    <string name="get_started">Get Started</string>
+    <string name="enable">Enable</string>
+    <string name="content_description_biometric">Biometric</string>
+    <string name="biometrics_message">Use biometric data to login instead of your password.</string>
+    <string name="save_password_failure">Something went wrong. Try again.</string>
+</resources>

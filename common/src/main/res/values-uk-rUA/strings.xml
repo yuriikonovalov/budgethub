@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Category names -->
+    <!-- Expense -->
+    <string name="default_expense_category_food_and_grocery" tools:keep="@string/default_expense_category_food_and_grocery">Їжа &amp; Бакалія</string>
+    <string name="default_expense_category_household_items" tools:keep="@string/default_expense_category_household_items">Побутові речі</string>
+    <string name="default_expense_category_health" tools:keep="@string/default_expense_category_health">Здоров’я</string>
+    <string name="default_expense_category_sport" tools:keep="@string/default_expense_category_sport">Спорт</string>
+    <string name="default_expense_category_transportation" tools:keep="@string/default_expense_category_transportation">Транспорт</string>
+    <string name="default_expense_category_car_and_bike" tools:keep="@string/default_expense_category_car_and_bike">" Автомобіль &amp; Велосипед"</string>
+    <string name="default_expense_category_entertainment" tools:keep="@string/default_expense_category_entertainment">Розваги</string>
+    <string name="default_expense_category_house" tools:keep="@string/default_expense_category_house">Будинок</string>
+    <string name="default_expense_category_bills" tools:keep="@string/default_expense_category_bills">Рахунки</string>
+    <string name="default_expense_category_shopping" tools:keep="@string/default_expense_category_shopping">Покупки</string>
+    <string name="default_expense_category_clothing" tools:keep="@string/default_expense_category_clothing">Одяг</string>
+    <string name="default_expense_category_gifts_and_donations" tools:keep="@string/default_expense_category_gifts_and_donations">Подарунки &amp; Пожертви</string>
+    <string name="default_expense_category_pets" tools:keep="@string/default_expense_category_pets">Домашні тварини</string>
+    <string name="default_expense_category_education" tools:keep="@string/default_expense_category_education">Освіта</string>
+    <string name="default_expense_category_travel" tools:keep="@string/default_expense_category_travel">Подорожі</string>
+    <string name="default_expense_category_restaurants" tools:keep="@string/default_expense_category_restaurants">Ресторани</string>
+    <!-- Income -->
+    <string name="default_income_category_salary" tools:keep="@string/default_income_category_salary">Зарплата</string>
+    <string name="default_income_category_interest" tools:keep="@string/default_income_category_interest">Відсотки</string>
+    <string name="default_income_category_dividends" tools:keep="@string/default_income_category_dividends">Дивіденди</string>
+
+    <!-- Default values for mapping-->
+    <string name="default_uncategorized_category">Без категорії</string>
+    <string name="default_mock_transaction_transfer" tools:keep="@string/default_mock_transaction_transfer">Трансфер</string>
+
+    <string name="app_name">BudgetHub</string>
+    <string name="cash">Готівка</string>
+    <string name="card">Карта</string>
+    <string name="deposit">Депозит</string>
+    <string name="save">Зберегти</string>
+    <string name="account_name">Назва акаунта</string>
+    <string name="current_balance" tools:keep="@string/current_balance">Поточний баланс</string>
+    <string name="type">Тип</string>
+    <string name="currency" tools:keep="@string/currency">Валюта</string>
+    <string name="expense">Витрати</string>
+    <string name="income">Дохід</string>
+    <string name="transfer">Трансфер</string>
+    <string name="create_account">Створити акаунт</string>
+    <string name="cancel">Скасувати</string>
+    <string name="gallery">Галерея</string>
+    <string name="camera">Камера</string>
+    <string name="write_note">Написати замітку</string>
+    <string name="select_category">Обрати категорію</string>
+    <string name="enter_note">Ввести замітку</string>
+    <string name="set_date">Обрати дату</string>
+    <string name="color">Колір</string>
+    <string name="balance">Баланс</string>
+    <string name="name">Назва</string>
+    <string name="select">Обрати</string>
+    <string name="new_category">Нова категорія</string>
+    <string name="add_a_photo">Додати фото</string>
+    <string name="add_transaction">Додати транзакцію</string>
+    <string name="ok">Гаразд</string>
+    <string name="icon">Значок</string>
+    <string name="search_for_currency">Пошук валют</string>
+    <string name="accounts">Акаунти</string>
+    <string name="report">Звіт</string>
+    <string name="settings">Налаштування</string>
+    <string name="label_from">з рахунку:</string>
+    <string name="label_to">на рахунок:</string>
+    <string name="edit">Редагувати</string>
+    <string name="delete">Видалити</string>
+    <string name="delete_a_transaction">Видалити транзакцію</string>
+    <string name="delete_a_transaction_message">Ви впевнені, що хочете видалити цю транзакцію?</string>
+    <string name="delete_a_transfer_message">Ви впевнені, що хочете видалити цей трансфер?</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="delete_a_transfer">Видалити трансфер</string>
+    <string name="details">Деталі</string>
+    <string name="attach_a_tag">Прикріпити тег</string>
+    <string name="continue_label">Продовжити</string>
+    <string name="this_month">Місяць</string>
+    <string name="this_week">Тиждень</string>
+    <string name="this_year">Рік</string>
+    <string name="all">Всі</string>
+    <string name="view_details">Переглянути деталі</string>
+    <string name="transactions">Транзакції</string>
+    <string name="see_all">Переглянути всі</string>
+    <string name="custom_range">Обрати період</string>
+    <string name="tags">Теги</string>
+    <string name="all_accounts">Всі акаунти</string>
+    <string name="period">Період</string>
+    <string name="no_expense_for_this_period">Немає витрат за цей період.</string>
+    <string name="no_income_for_this_period">Немає доходу за цей період.</string>
+    <string name="income_amp_expense">Дохід &amp; Витрати</string>
+    <string name="there_s_no_data_to_show_for_this_period">Немає даних для показу за цей період.</string>
+    <string name="there_s_no_data_for_given_filters">Немає даних для вказаних фільтрів.</string>
+    <string name="select_account">Обрати акаунт</string>
+    <string name="all_tags">Всі теги</string>
+    <string name="all_types">Всі типи</string>
+    <string name="select_tag">Обрати тег</string>
+    <string name="clear_filter">Очистити фільтр</string>
+    <string name="transfers">Трансфери</string>
+    <string name="cd_image_no_data">Немає даних</string>
+    <string name="cd_arrow_down">Стрілка вниз</string>
+    <string name="description_image">Зображення</string>
+    <string name="transaction">Транзакція</string>
+    <string name="cd_icon">Значок</string>
+    <string name="cd_note_icon">Значок замітки</string>
+    <string name="cd_tag_icon" tools:keep="@string/cd_tag_icon">Значок тега</string>
+    <string name="cd_photo_icon">Значок зображення</string>
+    <string name="create_password">Створити пароль</string>
+    <string name="confirm_password">Підтвердьте пароль</string>
+    <string name="incorrect_password">Неправильний пароль</string>
+    <string name="input_your_current_password">Введіть поточний пароль</string>
+    <string name="password_min_length">Пароль повинен містити не менше 6 символів.</string>
+    <string name="password_symbol_error">Пароль може містити лише літери a-z, A-Z і цифри.</string>
+    <string name="repeat_password">Повторіть пароль</string>
+    <string name="having_finished_press_continue">Закінчивши, натисніть продовжити</string>
+    <string name="passwords_don_t_match">Паролі не збігаються</string>
+    <string name="there_s_no_tags_yet_create_you_first_tag">Тегів ще немає. Створіть свій перший тег.</string>
+    <string name="new_tag">Новий тег</string>
+    <string name="account">Акаунт</string>
+    <string name="content_description_toolbar_navigation_button">Повернутись назад</string>
+    <string name="category_label_expense">На що витратили?</string>
+    <string name="category_label_income">Звідки ви це взяли?</string>
+    <string name="change">Змінити</string>
+    <string name="amount">Сума</string>
+    <string name="amount_to_receive">Сума до отримання</string>
+    <string name="amount_to_send">Сума для переведення</string>
+    <string name="account_to_label">Куди перевести?</string>
+    <string name="hint_category_name_expense">Подорожі, їжа тощо.</string>
+    <string name="hint_category_name_income">Зарплата, лотерея тощо.</string>
+    <string name="cd_selected_color">Галочка</string>
+    <string name="cd_add_color">Додати колір</string>
+    <string name="hint_account_name">напр. Visa Gold</string>
+    <string name="home">Початкова</string>
+
+    <plurals name="transactions">
+        <item quantity="one">%d транзакція</item>
+        <item quantity="few">%d транзакції</item>
+        <item quantity="many">%d транзакцій</item>
+        <item quantity="other">%d транзакції</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/accounts_navigation"
+    app:startDestination="@id/accounts_fragment">
+
+    <fragment
+        android:id="@+id/accounts_fragment"
+        android:name="com.yuriikonovalov.accounts.framework.ui.AccountsFragment"
+        tools:layout="@layout/fragment_accounts">
+        <action
+            android:id="@+id/to_add_edit_account_fragment"
+            app:destination="@id/add_edit_account_fragment">
+            <argument
+                android:name="accountId"
+                app:argType="long" />
+        </action>
+        <action
+            android:id="@+id/to_add_edit_transfer_fragment"
+            app:destination="@id/add_edit_transfer_fragment">
+            <argument
+                android:name="transferId"
+                app:argType="long" />
+        </action>
+    </fragment>
+</navigation>

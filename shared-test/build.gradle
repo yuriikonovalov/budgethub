@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.yuriikonovalov.shared_test'
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':features:home')
+    implementation project(':features:accounts')
+    implementation project(':features:report')
+    implementation project(':features:settings')
+    implementation project(':features:login')
+    implementation project(':features:onboarding')
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "androidx.paging:paging-common-ktx:$paging_version"
+    implementation "androidx.test:core-ktx:$test_core_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    implementation "androidx.test:runner:$test_runner"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+    implementation "androidx.test.ext:junit:$androidx_junit_version"
+    implementation "com.google.dagger:hilt-android-testing:$hilt_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+}

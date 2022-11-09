@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Налаштування</string>
+    <string name="clear_data_message">Ви впевнені, що бажаєте очистити дані? Це видалить усі ваші записи.</string>
+    <string name="clear_data_title">Очистити дані?</string>
+    <string name="restore_data_failure">Файл резервної копії несумісний із поточною БД</string>
+    <string name="clear_data_success">Дані видалено</string>
+    <string name="save_backup_file_success">Файл збережено</string>
+    <string name="save_backup_file_failure">Не вдалося зберегти файл</string>
+    <string name="create_backup_file_failure">Не вдається створити файл резервної копії</string>
+    <string name="security">Безпека</string>
+    <string name="password_authentication">Аутентифікація паролем</string>
+    <string name="data">Дані</string>
+    <string name="backup_data">Створити резервну копію даних</string>
+    <string name="restore_data">Відновити дані</string>
+    <string name="clear_data">Очистити дані</string>
+    <string name="biometric_authentication">Біометрична аутентифікація</string>
+    <string name="share_file">Поділитися</string>
+    <string name="save_file">Зберегти</string>
+    <string name="disable">Вимкнути</string>
+    <string name="enable">Ввімкнути</string>
+</resources>

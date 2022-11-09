@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="use_biometric">Біометрична автентифікація</string>
+    <string name="incorrect_password">Неправильний пароль</string>
+    <string name="biometric_prompt_title">Підтвердьте свою особу</string>
+    <string name="biometric_prompt_negative_button">Увійти з паролем</string>
+    <string name="login_message">Введіть пароль, щоб продовжити</string>
+    <string name="login">Логін</string>
+</resources>

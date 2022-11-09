@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/report_navigation"
+    app:startDestination="@id/report_fragment">
+
+    <fragment
+        android:id="@+id/report_fragment"
+        android:name="com.yuriikonovalov.report.framework.ui.ReportFragment"
+        tools:layout="@layout/fragment_report">
+        <action
+            android:id="@+id/to_transactions_fragment"
+            app:destination="@id/transactions_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/to_detailed_report_fragment"
+            app:destination="@id/detailed_report_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactions_fragment"
+        android:name="com.yuriikonovalov.report.framework.ui.transactions.TransactionsFragment"
+        tools:layout="@layout/fragment_transactions">
+        <argument
+            android:name="period"
+            app:argType="com.yuriikonovalov.common.application.entities.PeriodFilter" />
+        <action
+            android:id="@+id/to_transaction_details_fragment"
+            app:destination="@id/transaction_details_fragment">
+            <argument
+                android:name="transactionId"
+                app:argType="long" />
+        </action>
+        <action
+            android:id="@+id/to_transfer_details_fragment"
+            app:destination="@id/transfer_details_fragment">
+            <argument
+                android:name="transferId"
+                app:argType="long" />
+        </action>
+        <action
+            android:id="@+id/to_filterAccountBottomSheetDialog"
+            app:destination="@id/filter_account_bottom_sheet_dialog" />
+        <action
+            android:id="@+id/to_filterPeriodBottomSheetDialog"
+            app:destination="@id/filter_period_bottom_sheet_dialog" />
+        <action
+            android:id="@+id/to_filter_type_bottom_sheet_dialog"
+            app:destination="@id/filter_type_bottom_sheet_dialog" />
+        <action
+            android:id="@+id/to_filter_tag_bottom_sheet_dialog"
+            app:destination="@id/filter_tag_bottom_sheet_dialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailed_report_fragment"
+        android:name="com.yuriikonovalov.report.framework.ui.detailedreport.DetailedReportFragment"
+        tools:layout="@layout/fragment_detailed_report">
+        <argument
+            android:name="period"
+            app:argType="com.yuriikonovalov.common.application.entities.PeriodFilter" />
+        <action
+            android:id="@+id/to_filterAccountBottomSheetDialog"
+            app:destination="@id/filter_account_bottom_sheet_dialog" />
+        <action
+            android:id="@+id/to_filterPeriodBottomSheetDialog"
+            app:destination="@id/filter_period_bottom_sheet_dialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/filter_account_bottom_sheet_dialog"
+        android:name="com.yuriikonovalov.report.framework.ui.common.FilterAccountBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_filter_account">
+        <argument
+            android:name="accounts"
+            app:argType="com.yuriikonovalov.common.application.entities.account.Account[]" />
+        <argument
+            android:name="selection"
+            app:argType="com.yuriikonovalov.common.application.entities.account.Account[]" />
+    </dialog>
+    <dialog
+        android:id="@+id/filter_period_bottom_sheet_dialog"
+        android:name="com.yuriikonovalov.report.framework.ui.common.FilterPeriodBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_filter_period">
+        <argument
+            android:name="period"
+            app:argType="com.yuriikonovalov.common.application.entities.PeriodFilter" />
+    </dialog>
+    <dialog
+        android:id="@+id/filter_tag_bottom_sheet_dialog"
+        android:name="com.yuriikonovalov.report.framework.ui.transactions.filters.FilterTagBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_filter_tag">
+        <argument
+            android:name="tags"
+            app:argType="com.yuriikonovalov.common.application.entities.Tag[]" />
+        <argument
+            android:name="selection"
+            app:argType="com.yuriikonovalov.common.application.entities.Tag[]" />
+    </dialog>
+    <dialog
+        android:id="@+id/filter_type_bottom_sheet_dialog"
+        android:name="com.yuriikonovalov.report.framework.ui.transactions.filters.FilterTypeBottomSheetDialog"
+        tools:layout="@layout/bottom_sheet_dialog_filter_type">
+        <argument
+            android:name="type"
+            app:argType="com.yuriikonovalov.report.application.entities.TypeFilter" />
+    </dialog>
+
+</navigation>

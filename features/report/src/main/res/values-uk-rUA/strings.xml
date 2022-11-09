@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="there_s_no_tags_to_filter_by">Немає тегів.</string>
+    <string name="per_category">За категорією</string>
+</resources>

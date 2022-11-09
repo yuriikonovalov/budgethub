@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.App.CardView.Filled"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_normal"
+    android:layout_marginTop="@dimen/spacing_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_small">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:contentPadding="@dimen/spacing_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+            tools:srcCompat="@drawable/ic_transfer" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/transfer"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/barrier_amount"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/barrier_amount"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="14 July 2022" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="amount_from,amount_to" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/amount_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_extra_small"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@id/currency_from_code"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="- 1,240.00" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/currency_from_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/amount_from"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="UAH" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/amount_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_extra_small"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/currency_to_code"
+            app:layout_constraintTop_toBottomOf="@id/amount_from"
+            tools:text="- 1,240.00" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/currency_to_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/amount_to"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="UAH" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
